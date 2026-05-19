@@ -1,6 +1,104 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Hello World</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coral Reef's Gizmo - Unblocked Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>🎮 Coral Reef's Gizmo</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Play Unblocked Games Online</h2>
+            <p>Free, fun games available anywhere</p>
+        </section>
+
+        <section id="games" class="games-grid">
+            <h2>Featured Games</h2>
+            
+            <div class="game-card">
+                <h3>🎮 Geometry Dash Lite</h3>
+                <p>Navigate through challenging obstacles and beat exciting levels in this fast-paced action game!</p>
+                <button><a href="games/geometry-dash.html">Play Now</a></button>
+            </div>
+
+            <div class="game-card">
+                <h3>❌ Tic Tac Toe</h3>
+                <p>Classic strategy game. Play against an intelligent AI opponent and test your skills.</p>
+                <button><a href="#" onclick="playGame('tictactoe')">Play Now</a></button>
+            </div>
+
+            <div class="game-card">
+                <h3>🎰 Number Guessing</h3>
+                <p>Guess the secret number! Choose your difficulty level and see if you can beat the game.</p>
+                <button><a href="#" onclick="playGame('numbergame')">Play Now</a></button>
+            </div>
+
+            <div class="game-card">
+                <h3>💣 Minesweeper</h3>
+                <p>Classic puzzle game. Find all the mines and flag them. How fast can you clear the board?</p>
+                <button><a href="#" onclick="playGame('minesweeper')">Play Now</a></button>
+            </div>
+
+            <div class="game-card">
+                <h3>🧠 Memory Match</h3>
+                <p>Test your memory by matching pairs of emoji cards. See how few moves you can use!</p>
+                <button><a href="#" onclick="playGame('memory')">Play Now</a></button>
+            </div>
+
+            <div class="game-card">
+                <h3>🐦 Flappy Bird</h3>
+                <p>Tap to fly! Avoid obstacles and get the highest score. Simple but challenging!</p>
+                <button><a href="#" onclick="playGame('flappy')">Play Now</a></button>
+            </div>
+
+            <div class="game-card">
+                <h3>🐍 Snake</h3>
+                <p>Eat food and grow your snake. Avoid hitting walls and yourself. Classic arcade fun!</p>
+                <button><a href="#" onclick="playGame('snake')">Play Now</a></button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Coral Reef's Gizmo</h2>
+            <p>Welcome to Coral Reef's Gizmo, your ultimate destination for unblocked games! We offer a collection of fun, free games that work on any device, anywhere. Whether you're looking for quick gaming sessions or challenging puzzles, we've got something for everyone.</p>
+            <p>All our games are built with HTML5 and JavaScript, so they run smoothly in your browser without any downloads needed.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Coral Reef's Gizmo. All rights reserved.</p>
+    </footer>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="gameFrame"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
